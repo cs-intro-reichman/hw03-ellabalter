@@ -16,7 +16,7 @@ public class UniqueChars {
 
         for (int i = 0; i < length; i++) {
             char c = s.charAt(i);
-            if (strUnique.indexOf(s.charAt(i)) == -1 ) {
+            if (strUnique.indexOf(s.charAt(i)) == -1 || c == ' ') {
                 strUnique = strUnique + ((char) c);
             }
         }

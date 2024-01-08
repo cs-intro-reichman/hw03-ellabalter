@@ -53,7 +53,7 @@
 				 System.out.print(day + "/" + month + "/" + year);
 
 				 if ((dayOfWeek % 7 == 1)) {
-					 System.out.print(" sunday");
+					 System.out.print(" Sunday");
 				 }
 				 System.out.println("");
 				 dayOfWeek++;
