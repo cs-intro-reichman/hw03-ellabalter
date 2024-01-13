@@ -40,24 +40,22 @@
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance()
 	 {
-			for ( int month = 1 ; month <= 12; month++)
+		 // #feedback - please note the indentation and empty lines removal here.
+		for ( int month = 1 ; month <= 12; month++)
+		{
+			for (int day = 1; day <= nDaysInMonth(month, year); day++)
 			{
+				System.out.print(day + "/" + month + "/" + year);
 
-
-				for (int day = 1; day <= nDaysInMonth(month, year); day++)
+				if((dayOfWeek % 7 == 1 && day == 1))
 				{
-					System.out.print(day + "/" + month + "/" + year);
-
-					if((dayOfWeek % 7 == 1 && day == 1))
-					{
-
-						System.out.print(" sunday");
-						counter++;
-					}
-						System.out.println("");
-					dayOfWeek++;
+					System.out.print(" sunday");
+					counter++;
 				}
+				System.out.println("");
+				dayOfWeek++;
 			}
+		}
 		 System.out.println("During the 20th century, " + counter + " Sundays fell on the first day of the month");
 	 }
 		 
