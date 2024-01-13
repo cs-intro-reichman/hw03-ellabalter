@@ -31,6 +31,8 @@ public class Calendar0 {
 
 	// Returns true if the given year is a leap year, false otherwise.
 	public static boolean isLeapYear(int year) {
+		// #feedback - you can avoid creating a new variable and just return the boolean in one line -
+		// return (year % 400 == 0) || (((year % 4) == 0) && ((year % 100) != 0));
 		boolean isLeapYear = true;
 			isLeapYear = (year % 400 == 0);
 			isLeapYear = isLeapYear || (((year % 4) == 0) && ((year % 100) != 0));
