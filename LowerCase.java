@@ -14,20 +14,17 @@ public class LowerCase {
         String strConversion = "";
         int length = s.length();
 
-
         for (int i = 0; i < length; i++) {
             char c = s.charAt(i);
             if (s.charAt(i) >= 65 && s.charAt(i) <= 90) {
                 strConversion = strConversion + ((char) (c + 32));
-                }
-                else {
-                strConversion = strConversion + ((char) c);
-
+            } // #feedback - note the indentation here.
+            else {
+                strConversion = strConversion + ((char) c); // #feedback - please remove redundant empty lines for better readability of the code.
             }
         }
-            return strConversion;
-
-        }
+        return strConversion;
+    }
 
 }
 
